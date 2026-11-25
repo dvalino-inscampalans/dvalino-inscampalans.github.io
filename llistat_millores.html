@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Llista de millores — PingTek</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Logo2.ico">
+  <style>
+    .titol-bloc { margin-top: 48px; }
+    .titol-bloc:first-of-type { margin-top: 0; }
+    .targeta p { margin-bottom: 10px; font-size: 0.9rem; }
+    .targeta p:last-child { margin-bottom: 0; }
+    .targeta strong { color: var(--text); }
+  </style>
+</head>
+<body>
+
+  <header class="capcalera">
+    <div class="logo">Ping<span>Tek</span></div>
+    <nav class="navegacio">
+      <a href="index.html">Inici</a>
+      <a href="llistat-articles.html">Llista completa d'articles</a>
+      <a href="millores.html" class="actiu">Millores</a>
+    </nav>
+  </header>
+
+  <section class="portada">
+    <h1>Reptes de millora del web</h1>
+    <p>Tria una millora segons el teu nivell, crea una branca nova al repositori i envia la teva Pull Request.</p>
+  </section>
+
+  <main class="contenidor">
+
+    <h2 class="titol-seccio titol-bloc">Bloc 1: Iniciació — Correccions, HTML semàntic i accessibilitat</h2>
+    <div class="graella">
+
+      <article class="targeta" style="border-top-color: #10b981;">
+        <div>
+          <span class="etiqueta" style="background-color: #10b981;">PR #01 · Bloc 1</span>
+          <h3>1. Corregir el nom del projecte al peu de pàgina</h3>
+          <p><strong>Problema:</strong> A <code>index.html</code>, el peu de pàgina mostra «PengTek» en lloc de «PingTek».</p>
+          <p><strong>Motiu:</strong> Mantenir la coherència de marca a tot el web.</p>
+          <p><strong>Objectiu:</strong> Canviar el text a «PingTek» i verificar que coincideixi a totes les pàgines HTML.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #10b981;">
+        <div>
+          <span class="etiqueta" style="background-color: #10b981;">PR #02 · Bloc 1</span>
+          <h3>2. Arreglar la càrrega de la icona</h3>
+          <p><strong>Problema:</strong> <code>index.html</code> fa servir una icona quadrada poc estètica</p>
+          <p><strong>Motiu:</strong> Garantir que la icona del pingüí es vegi a la pestanya de qualsevol navegador de manera adequada.</p>
+          <p><strong>Objectiu:</strong> Substituir la icona per una millor per al web.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #10b981;">
+        <div>
+          <span class="etiqueta" style="background-color: #10b981;">PR #03 · Bloc 1</span>
+          <h3>3. Convertir el logo de la capçalera en un enllaç</h3>
+          <p><strong>Problema:</strong> El text «PingTek» de <code>.capcalera</code> és un <code>&lt;div&gt;</code> estàtic sense enllaç.</p>
+          <p><strong>Motiu:</strong> És una convenció estàndard que clicar el logo retorni a la pàgina principal.</p>
+          <p><strong>Objectiu:</strong> Embolcallar el logo amb <code>&lt;a href="index.html"&gt;</code> a tots els HTML.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #10b981;">
+        <div>
+          <span class="etiqueta" style="background-color: #10b981;">PR #04 · Bloc 1</span>
+          <h3>4. Millorar l'atribut <code>alt</code> i la mida del logo</h3>
+          <p><strong>Problema:</strong> <code>Logo1.png</code> té un <code>alt="Logo"</code> massa genèric i un atribut obsolet <code>width="30%"</code>.</p>
+          <p><strong>Motiu:</strong> Millorar l'accessibilitat i separar l'estructura (HTML) de la presentació (CSS).</p>
+          <p><strong>Objectiu:</strong> Posar un <code>alt</code> descriptiu, eliminar <code>width="30%"</code> de l'HTML i definir la mida dins de <code>style.css</code>.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #10b981;">
+        <div>
+          <span class="etiqueta" style="background-color: #10b981;">PR #05 · Bloc 1</span>
+          <h3>5. Afegir metadades de descripció (SEO bàsic)</h3>
+          <p><strong>Problema:</strong> Cap fitxer HTML inclou l'etiqueta <code>&lt;meta name="description"&gt;</code>.</p>
+          <p><strong>Motiu:</strong> Ajudar els cercadors i les previsualitzacions d'enllaços a resumir cada pàgina.</p>
+          <p><strong>Objectiu:</strong> Afegir una <code>&lt;meta name="description"&gt;</code> única al <code>&lt;head&gt;</code> de cada fitxer HTML.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #10b981;">
+        <div>
+          <span class="etiqueta" style="background-color: #10b981;">PR #06 · Bloc 1</span>
+          <h3>6. Associar una etiqueta <code>&lt;label&gt;</code> al cercador</h3>
+          <p><strong>Problema:</strong> L'<code>&lt;input id="cercador"&gt;</code> només depèn del <code>placeholder</code>, que desapareix en escriure.</p>
+          <p><strong>Motiu:</strong> Complir bones pràctiques d'accessibilitat per a lectors de pantalla.</p>
+          <p><strong>Objectiu:</strong> Afegir <code>&lt;label for="cercador"&gt;</code> (visible o oculta visualment) a les pàgines amb cercador.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #10b981;">
+        <div>
+          <span class="etiqueta" style="background-color: #10b981;">PR #07 · Bloc 1</span>
+          <h3>7. Afegir càrrega diferida a les imatges</h3>
+          <p><strong>Problema:</strong> Totes les imatges de les targetes es carreguen alhora en obrir el web.</p>
+          <p><strong>Motiu:</strong> Reduir el consum de dades i accelerar la càrrega inicial quan hi hagi molts articles.</p>
+          <p><strong>Objectiu:</strong> Afegir l'atribut <code>loading="lazy"</code> a l'etiqueta <code>&lt;img&gt;</code> dins de <code>script.js</code>.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #10b981;">
+        <div>
+          <span class="etiqueta" style="background-color: #10b981;">PR #08 · Bloc 1</span>
+          <h3>8. Millorar la seguretat dels enllaços externs</h3>
+          <p><strong>Problema:</strong> Els enllaços tenen <code>rel="noopener"</code>, però no informen que s'obren en una pestanya nova.</p>
+          <p><strong>Motiu:</strong> Reforçar la seguretat (<code>noreferrer</code>) i evitar sorpreses a l'usuari.</p>
+          <p><strong>Objectiu:</strong> Actualitzar l'atribut a <code>rel="noopener noreferrer"</code> i afegir un <code>aria-label</code> o icona <code>↗</code> a <code>script.js</code>.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #10b981;">
+        <div>
+          <span class="etiqueta" style="background-color: #10b981;">PR #09 · Bloc 1</span>
+          <h3>9. Afegir un enllaç per tornar a dalt</h3>
+          <p><strong>Problema:</strong> Quan la llista d'articles és llarga, cal fer molt scroll manual per tornar al cercador.</p>
+          <p><strong>Motiu:</strong> Facilitar la navegació en pàgines llargues sense necessitat de JavaScript.</p>
+          <p><strong>Objectiu:</strong> Posar <code>id="inici"</code> a la capçalera, un enllaç <code>href="#inici"</code> al peu i <code>scroll-behavior: smooth;</code> al CSS.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #10b981;">
+        <div>
+          <span class="etiqueta" style="background-color: #10b981;">PR #10 · Bloc 1</span>
+          <h3>10. Crear la pàgina «Bases de la competició»</h3>
+          <p><strong>Problema:</strong> El web parla d'una competició de disseny d'articles, però no n'explica les regles enlloc.</p>
+          <p><strong>Motiu:</strong> Donar context clar als visitants i participants.</p>
+          <p><strong>Objectiu:</strong> Crear <code>bases.html</code> reutilitzant <code>style.css</code> i enllaçar-la des de la navegació o el peu.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- BLOC 2 -->
+    <h2 class="titol-seccio titol-bloc">Bloc 2: CSS i Disseny Responsiu — Poliment visual</h2>
+    <div class="graella">
+
+      <article class="targeta" style="border-top-color: #0ea5e9;">
+        <div>
+          <span class="etiqueta" style="background-color: #0ea5e9;">PR #11 · Bloc 2</span>
+          <h3>11. Adaptar la capçalera a pantalles mòbils</h3>
+          <p><strong>Problema:</strong> En pantalles estretes (&lt; 600px), el logo i els enllaços queden massa junts o es trenquen malament.</p>
+          <p><strong>Motiu:</strong> Assegurar que el web sigui còmode i llegible des del telèfon mòbil.</p>
+          <p><strong>Objectiu:</strong> Afegir una <code>@media (max-width: 600px)</code> que apili la capçalera en columna.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #0ea5e9;">
+        <div>
+          <span class="etiqueta" style="background-color: #0ea5e9;">PR #12 · Bloc 2</span>
+          <h3>12. Fer la capçalera fixa en fer scroll</h3>
+          <p><strong>Problema:</strong> En baixar pels articles, la barra de navegació desapareix de la pantalla.</p>
+          <p><strong>Motiu:</strong> Permetre canviar de secció en qualsevol moment sense tornar a dalt.</p>
+          <p><strong>Objectiu:</strong> Aplicar <code>position: sticky; top: 0; z-index: 100;</code> a <code>.capcalera</code>.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #0ea5e9;">
+        <div>
+          <span class="etiqueta" style="background-color: #0ea5e9;">PR #13 · Bloc 2</span>
+          <h3>13. Efecte <code>hover</code> animat als enllaços</h3>
+          <p><strong>Problema:</strong> Els enllaços de <code>.navegacio</code> a <code>style.css</code> no reaccionen visualment en passar-hi el ratolí.</p>
+          <p><strong>Motiu:</strong> Oferir retroacció visual coherent amb la resta d'elements interactius.</p>
+          <p><strong>Objectiu:</strong> Afegir una transició suau de color i un subratllat animat en fer <code>:hover</code>.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #0ea5e9;">
+        <div>
+          <span class="etiqueta" style="background-color: #0ea5e9;">PR #14 · Bloc 2</span>
+          <h3>14. Estils de focus visibles per a teclat</h3>
+          <p><strong>Problema:</strong> <code>#cercador</code> té <code>outline: none;</code> i els enllaços tenen poc contrast en navegar amb <code>Tab</code>.</p>
+          <p><strong>Motiu:</strong> Garantir una navegació accessible per a persones que fan servir el teclat.</p>
+          <p><strong>Objectiu:</strong> Definir regles <code>:focus-visible</code> amb un contorn ben contrastat per a botons, enllaços i inputs.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #0ea5e9;">
+        <div>
+          <span class="etiqueta" style="background-color: #0ea5e9;">PR #15 · Bloc 2</span>
+          <h3>15. Limitar les línies de descripció a les targetes</h3>
+          <p><strong>Problema:</strong> Si un article té una descripció molt llarga, la targeta es fa molt més alta que les del costat.</p>
+          <p><strong>Motiu:</strong> Mantenir una graella visualment equilibrada i ordenada.</p>
+          <p><strong>Objectiu:</strong> Aplicar <code>-webkit-line-clamp: 3;</code> amb <code>overflow: hidden;</code> a <code>.targeta p</code>.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #0ea5e9;">
+        <div>
+          <span class="etiqueta" style="background-color: #0ea5e9;">PR #16 · Bloc 2</span>
+          <h3>16. Refinar l'efecte <code>hover</code> de graella i imatges</h3>
+          <p><strong>Problema:</strong> <code>.graella:hover</code> mou tot el bloc d'articles alhora, mentre que les imatges queden estàtiques.</p>
+          <p><strong>Motiu:</strong> Aconseguir microinteraccions més elegants i menys brusques.</p>
+          <p><strong>Objectiu:</strong> Suavitzar o treure l'elevació de <code>.graella</code> i afegir un zoom subtil (<code>scale(1.05)</code>) a <code>.imatge-targeta</code>.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #0ea5e9;">
+        <div>
+          <span class="etiqueta" style="background-color: #0ea5e9;">PR #17 · Bloc 2</span>
+          <h3>17. Afegir una icona de lupa dins del cercador</h3>
+          <p><strong>Problema:</strong> La barra cercadora és un camp de text pla sense indicador visual de cerca.</p>
+          <p><strong>Motiu:</strong> Fer l'element immediatament reconeixible a primer cop d'ull.</p>
+          <p><strong>Objectiu:</strong> Col·locar una lupa dins de <code>.caixa-cerca</code> amb <code>position: absolute</code> i ajustar el <code>padding-left</code>.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #0ea5e9;">
+        <div>
+          <span class="etiqueta" style="background-color: #0ea5e9;">PR #18 · Bloc 2</span>
+          <h3>18. Respectar la preferència de moviment reduït</h3>
+          <p><strong>Problema:</strong> El logo balanceja constantment i les targetes tenen animacions sense opció de desactivar-les.</p>
+          <p><strong>Motiu:</strong> Evitar mareig o molèsties visuals a usuaris sensibles al moviment.</p>
+          <p><strong>Objectiu:</strong> Afegir <code>@media (prefers-reduced-motion: reduce)</code> per desactivar animacions i transicions.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #0ea5e9;">
+        <div>
+          <span class="etiqueta" style="background-color: #0ea5e9;">PR #19 · Bloc 2</span>
+          <h3>19. Estilitzar un peu de pàgina en columnes</h3>
+          <p><strong>Problema:</strong> El <code>.peu</code> actual és només una línia de text centrada.</p>
+          <p><strong>Motiu:</strong> Donar al web un acabat més complet i informatiu.</p>
+          <p><strong>Objectiu:</strong> Reestructurar el <code>&lt;footer&gt;</code> amb Flexbox o Grid en 2-3 columnes adaptables a mòbil.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #0ea5e9;">
+        <div>
+          <span class="etiqueta" style="background-color: #0ea5e9;">PR #20 · Bloc 2</span>
+          <h3>20. Incorporar una tipografia de Google Fonts</h3>
+          <p><strong>Problema:</strong> El web fa servir <code>system-ui</code>, que canvia d'aspecte segons el dispositiu.</p>
+          <p><strong>Motiu:</strong> Donar una identitat visual pròpia i consistent a PingTek.</p>
+          <p><strong>Objectiu:</strong> Importar una parella de tipografies (ex. <em>Outfit</em> i <em>Inter</em>) i aplicar-les amb variables CSS.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- BLOC 3 -->
+    <h2 class="titol-seccio titol-bloc">Bloc 3: JavaScript Bàsic i Intermedi — Interactivitat</h2>
+    <div class="graella">
+
+      <article class="targeta" style="border-top-color: #f59e0b;">
+        <div>
+          <span class="etiqueta" style="background-color: #f59e0b;">PR #21 · Bloc 3</span>
+          <h3>21. Mostrar només 3 articles destacats a <code>index.html</code></h3>
+          <p><strong>Problema:</strong> <code>index.html</code> i <code>llistat-articles.html</code> mostren exactament els mateixos articles.</p>
+          <p><strong>Motiu:</strong> Diferenciar la portada («Articles destacats») del catàleg complet.</p>
+          <p><strong>Objectiu:</strong> Llegir un atribut <code>data-limit="3"</code> a <code>#graella-articles</code> dins d'<code>index.html</code> per limitar els resultats inicials.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #f59e0b;">
+        <div>
+          <span class="etiqueta" style="background-color: #f59e0b;">PR #22 · Bloc 3</span>
+          <h3>22. Afegir un comptador dinàmic de resultats</h3>
+          <p><strong>Problema:</strong> L'usuari no sap quants articles hi ha en total ni quants coincideixen amb la cerca.</p>
+          <p><strong>Motiu:</strong> Millorar la claredat i la retroacció del cercador.</p>
+          <p><strong>Objectiu:</strong> Crear un <code>&lt;p id="comptador"&gt;</code> que s'actualitzi amb «Mostrant X de Y articles».</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #f59e0b;">
+        <div>
+          <span class="etiqueta" style="background-color: #f59e0b;">PR #23 · Bloc 3</span>
+          <h3>23. Afegir un botó per netejar la cerca (<code>✕</code>)</h3>
+          <p><strong>Problema:</strong> Per esborrar una cerca cal seleccionar tot el text o prémer esborrar repetidament.</p>
+          <p><strong>Motiu:</strong> Agilitzar l'ús del cercador, especialment en pantalles tàctils.</p>
+          <p><strong>Objectiu:</strong> Mostrar un botó <code>✕</code> dins de <code>.caixa-cerca</code> quan hi ha text escrit que buidi l'input en clicar-hi.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #f59e0b;">
+        <div>
+          <span class="etiqueta" style="background-color: #f59e0b;">PR #24 · Bloc 3</span>
+          <h3>24. Crear botons de filtre per categoria</h3>
+          <p><strong>Problema:</strong> Per veure articles d'una temàtica cal escriure-la manualment al cercador.</p>
+          <p><strong>Motiu:</strong> Facilitar l'exploració temàtica amb un sol clic.</p>
+          <p><strong>Objectiu:</strong> Generar botons dinàmics (<em>Tots</em>, <em>Ciència</em>, <em>Cultura</em>...) a partir de l'array <code>articles</code> i filtrar en clicar-hi.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #f59e0b;">
+        <div>
+          <span class="etiqueta" style="background-color: #f59e0b;">PR #25 · Bloc 3</span>
+          <h3>25. Afegir un botó «Article aleatori»</h3>
+          <p><strong>Problema:</strong> Si l'usuari no sap què llegir, no té cap forma ràpida de descobrir contingut a l'atzar.</p>
+          <p><strong>Motiu:</strong> Incorporar una funció clàssica de les enciclopèdies digitals.</p>
+          <p><strong>Objectiu:</strong> Afegir un botó a la portada que triï un article amb <code>Math.random()</code> i l'obri en una pestanya nova.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #f59e0b;">
+        <div>
+          <span class="etiqueta" style="background-color: #f59e0b;">PR #26 · Bloc 3</span>
+          <h3>26. Desplegable per ordenar els articles</h3>
+          <p><strong>Problema:</strong> Els articles sempre apareixen en l'ordre fix en què estan escrits a <code>script.js</code>.</p>
+          <p><strong>Motiu:</strong> Permetre consultar el catàleg de manera més estructurada.</p>
+          <p><strong>Objectiu:</strong> Afegir un <code>&lt;select id="ordenar"&gt;</code> (Per defecte, A–Z, Z–A, Categoria) que reordeni la llista.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #f59e0b;">
+        <div>
+          <span class="etiqueta" style="background-color: #f59e0b;">PR #27 · Bloc 3</span>
+          <h3>27. Fer la cerca insensible als accents</h3>
+          <p><strong>Problema:</strong> Si algú cerca «ciencia» (sense accent), el cercador no troba «Ciència».</p>
+          <p><strong>Motiu:</strong> Evitar resultats buits frustrants per faltes d'accentuació ràpides.</p>
+          <p><strong>Objectiu:</strong> Crear una funció <code>normalitzarText()</code> amb <code>.normalize("NFD")</code> i aplicar-la al filtre de cerca.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #f59e0b;">
+        <div>
+          <span class="etiqueta" style="background-color: #f59e0b;">PR #28 · Bloc 3</span>
+          <h3>28. Incorporar autor i data als articles</h3>
+          <p><strong>Problema:</strong> Les targetes només mostren categoria, títol i descripció, sense donar crèdit a l'autor.</p>
+          <p><strong>Motiu:</strong> Posar en valor la feina dels participants de la competició.</p>
+          <p><strong>Objectiu:</strong> Afegir <code>autor</code> i <code>data</code> a cada objecte d'<code>articles</code> i mostrar-los dins de cada targeta.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #f59e0b;">
+        <div>
+          <span class="etiqueta" style="background-color: #f59e0b;">PR #29 · Bloc 3</span>
+          <h3>29. Botó flotant «Pujar a dalt» amb scroll</h3>
+          <p><strong>Problema:</strong> Un enllaç fix al peu obliga a arribar fins al final de la pàgina per fer-lo servir.</p>
+          <p><strong>Motiu:</strong> Millorar la comoditat en dispositius mòbils i llistats llargs.</p>
+          <p><strong>Objectiu:</strong> Crear un botó flotant que aparegui quan <code>window.scrollY &gt; 300</code> i pugi suaument en clicar-hi.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #f59e0b;">
+        <div>
+          <span class="etiqueta" style="background-color: #f59e0b;">PR #30 · Bloc 3</span>
+          <h3>30. Ressaltar el text cercat dins dels resultats</h3>
+          <p><strong>Problema:</strong> En cercar una paraula clau, l'usuari ha de rellegir la targeta per veure on coincideix.</p>
+          <p><strong>Motiu:</strong> Fer els resultats de cerca molt més ràpids d'escanejar.</p>
+          <p><strong>Objectiu:</strong> Embolcallar la coincidència trobada amb l'etiqueta <code>&lt;mark&gt;</code> mentre hi hagi text al cercador.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- BLOC 4 -->
+    <h2 class="titol-seccio titol-bloc">Bloc 4: JavaScript Avançat i Arquitectura</h2>
+    <div class="graella">
+
+      <article class="targeta" style="border-top-color: #ff5c8a;">
+        <div>
+          <span class="etiqueta" style="background-color: #ff5c8a;">PR #31 · Bloc 4</span>
+          <h3>31. Mode fosc amb memòria (<code>localStorage</code>)</h3>
+          <p><strong>Problema:</strong> El web només té tema clar, que pot cansar la vista en entorns amb poca llum.</p>
+          <p><strong>Motiu:</strong> Oferir tema fosc persistent entre pàgines mitjançant variables CSS i <code>localStorage</code>.</p>
+          <p><strong>Objectiu:</strong> Afegir un botó 🌙/☀️ que alterni la classe <code>.mode-fosc</code> al <code>&lt;body&gt;</code> i guardi l'elecció.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #ff5c8a;">
+        <div>
+          <span class="etiqueta" style="background-color: #ff5c8a;">PR #32 · Bloc 4</span>
+          <h3>32. Sistema d'articles preferits</h3>
+          <p><strong>Problema:</strong> Els usuaris no poden marcar articles que els interessin per llegir-los més tard.</p>
+          <p><strong>Motiu:</strong> Augmentar la utilitat del web i practicar la gestió d'estat al navegador.</p>
+          <p><strong>Objectiu:</strong> Afegir un botó d'estrella a cada targeta desat a <code>localStorage</code> i un filtre «Només preferits».</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #ff5c8a;">
+        <div>
+          <span class="etiqueta" style="background-color: #ff5c8a;">PR #34 · Bloc 4</span>
+          <h3>34. Gestionar errors de càrrega i imatges trencades</h3>
+          <p><strong>Problema:</strong> Si una URL d'imatge falla o el JSON té un error, l'usuari veu icones trencades o pantalla buida.</p>
+          <p><strong>Motiu:</strong> Fer l'aplicació resistent a fallades externes.</p>
+          <p><strong>Objectiu:</strong> Afegir <code>try/catch</code> a la càrrega de dades i un <code>onerror</code> a les imatges amb <code>Logo1.png</code> de reserva.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #ff5c8a;">
+        <div>
+          <span class="etiqueta" style="background-color: #ff5c8a;">PR #35 · Bloc 4</span>
+          <h3>35. Sincronitzar cerca i categoria amb la URL</h3>
+          <p><strong>Problema:</strong> Si recarregues la pàgina o comparteixes l'enllaç, es perd la cerca o el filtre aplicat.</p>
+          <p><strong>Motiu:</strong> Permetre compartir enllaços directes a una categoria o cerca concreta.</p>
+          <p><strong>Objectiu:</strong> Llegir i actualitzar paràmetres amb <code>URLSearchParams</code> i <code>history.replaceState()</code>.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #ff5c8a;">
+        <div>
+          <span class="etiqueta" style="background-color: #ff5c8a;">PR #36 · Bloc 4</span>
+          <h3>36. Paginació o botó «Carregar més»</h3>
+          <p><strong>Problema:</strong> Quan hi hagi desenes d'articles, dibuixar-los tots de cop allargarà massa la pàgina.</p>
+          <p><strong>Motiu:</strong> Preparar el catàleg per créixer sense perdre rendiment ni usabilitat.</p>
+          <p><strong>Objectiu:</strong> Mostrar els articles de 6 en 6 i afegir un botó «Carregar més articles» que ampliï el límit.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #ff5c8a;">
+        <div>
+          <span class="etiqueta" style="background-color: #ff5c8a;">PR #37 · Bloc 4</span>
+          <h3>37. Finestra modal de vista prèvia ràpida</h3>
+          <p><strong>Problema:</strong> Clicar una targeta porta directament a un enllaç extern sense mostrar més informació prèvia.</p>
+          <p><strong>Motiu:</strong> Permetre llegir un resum més ampli abans de sortir del web principal.</p>
+          <p><strong>Objectiu:</strong> Afegir un botó «Vista prèvia» que obri un <code>&lt;dialog&gt;</code> natiu d'HTML amb els detalls de l'article.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #ff5c8a;">
+        <div>
+          <span class="etiqueta" style="background-color: #ff5c8a;">PR #38 · Bloc 4</span>
+          <h3>38. Dreceres de teclat per al cercador</h3>
+          <p><strong>Problema:</strong> Cal moure el ratolí fins a la barra cercadora cada cop que es vol iniciar una cerca.</p>
+          <p><strong>Motiu:</strong> Millorar la rapidesa d'ús a l'estil de les aplicacions web modernes.</p>
+          <p><strong>Objectiu:</strong> Escoltar <code>keydown</code> perquè prémer <code>/</code> enfoqui <code>#cercador</code> i <code>Escape</code> el netegi.</p>
+        </div>
+      </article>
+
+      <article class="targeta" style="border-top-color: #ff5c8a;">
+        <div>
+          <span class="etiqueta" style="background-color: #ff5c8a;">PR #39 · Bloc 4</span>
+          <h3>39. Barra de progrés de lectura a la plantilla</h3>
+          <p><strong>Problema:</strong> En articles llargs, el lector no té referència visual de quant li queda per acabar.</p>
+          <p><strong>Motiu:</strong> Enriquir la base comuna de la competició d'articles amb un indicador modern.</p>
+          <p><strong>Objectiu:</strong> Afegir una barra superior fixa a <code>plantilla-article.html</code> que creixi de <code>0%</code> a <code>100%</code> amb l'scroll.</p>
+        </div>
+      </article>
+
+    </div>
+
+  </main>
+
+  <footer class="peu">
+    <p>PingTek · Projecte d'aprenentatge web</p>
+  </footer>
+
+</body>
+</html>
