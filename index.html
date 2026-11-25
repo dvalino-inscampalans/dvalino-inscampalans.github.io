@@ -1,10 +1,52 @@
 <!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pingtek — Articles de Veritat</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Logo2.ico">
+</head>
+<body>
 
-<html>
-  <head>
-    <title>PROVA</title>
-    <meta charset="UTF-8">
+  <header class="capcalera">
+    <div class="logo">Ping<span>Tek</span></div>
+    <nav class="navegacio">
+      <a href="index.html" class="actiu">Inici</a>
+      <a href="llistat_articles.html">Llista completa d'articles</a>
+      <a href="llistat_millores.html">Millora el web</a>
+    </nav>
+  </header>
+
+  <section class="portada">
+    <img src="Logo1.png" alt="Logo" width="30%">
+    <h1>Explora el coneixement</h1>
+    <p>Recull dinàmic d'articles creats per la comunitat.</p>
     
-  </head>
-  
+    <div class="caixa-cerca">
+      <input 
+        type="text" 
+        id="cercador" 
+        placeholder="Cerca per títol, tema o paraula clau..."
+      >
+    </div>
+  </section>
+
+  <main class="contenidor">
+    <h2 class="titol-seccio">Articles destacats</h2>
+    
+    <div id="graella-articles" class="graella">
+    </div>
+
+    <p id="sense-resultats" class="missatge-buit amagat">
+      No s'ha trobat cap article amb aquesta cerca.
+    </p>
+  </main>
+
+  <footer class="peu">
+    <p>PingTek · Projecte d'aprenentatge web</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>

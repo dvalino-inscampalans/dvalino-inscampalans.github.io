@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Llista completa d'articles — PingTek</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Logo2.ico">
+</head>
+<body>
+
+  <header class="capcalera">
+    <div class="logo">Ping<span>Tek</span></div>
+    <nav class="navegacio">
+      <a href="index.html">Inici</a>
+      <a href="llistat-articles.html" class="actiu">Llista completa d'articles</a>
+      <a href="llistat_millores.html">Millora el web</a>
+    </nav>
+  </header>
+
+  <section class="portada">
+    <h1>Llista completa d'articles</h1>
+    <p>Accedeix a tots els articles de la comunitat o utilitza la plantilla per crear el teu.</p>
+
+    <div class="caixa-cerca">
+      <input 
+        type="text" 
+        id="cercador" 
+        placeholder="Filtra el llistat per títol, tema o paraula clau..."
+      >
+    </div>
+  </section>
+
+  <main class="contenidor">
+    <!-- Accés directe a la plantilla de la competició -->
+    <h2 class="titol-seccio">Competició de disseny</h2>
+    <article class="targeta" style="margin-bottom: 40px;">
+      <div>
+        <span class="etiqueta" style="background-color: #5b4bff;">Plantilla oficial</span>
+        <h3>Crea el teu propi article per a PingTek</h3>
+        <p>Fes servir aquesta estructura base (màx. 60 línies) com a punt de partida i personalitza-la amb el teu propi disseny.</p>
+      </div>
+      <div class="accions-plantilla">
+        <a class="boto-llegir" href="plantilla.html">
+          Obrir plantilla d'article →           
+        </a>
+        <a class="boto-descarrega" href="plantilla.html" download>
+          Descarregar HTML
+        </a>
+        <a class="boto-descarrega" href="plantilla.css" download>
+          Descarregar CSS
+        </a>
+      </div>
+    </article>
+
+    <!-- Llistat dinàmic d'articles externs (carregat des de script.js) -->
+    <h2 class="titol-seccio">Tots els articles publicats</h2>
+    <div id="graella-articles" class="graella"></div>
+
+    <p id="sense-resultats" class="missatge-buit amagat">
+      No s'ha trobat cap article amb aquesta cerca.
+    </p>
+  </main>
+
+  <footer class="peu">
+    <p>PingTek · Projecte d'aprenentatge web</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

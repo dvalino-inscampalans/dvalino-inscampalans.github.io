@@ -1,0 +1,59 @@
+/* Estètica base comuna a tots els articles (màx. 60 línies) */
+:root { --primari: #5b4bff; --text: #1e293b; --suau: #64748b; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg, #5b4bff 0%, #0ea5e9 55%, #ff5c8a 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.capcalera {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo { font-size: 1.5rem; font-weight: 800; }
+.logo span { color: var(--primari); }
+.navegacio a { text-decoration: none; color: var(--suau); font-weight: 600; margin-left: 20px; }
+.navegacio a:hover { color: var(--primari); }
+
+.article {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.96);
+  border-top: 6px solid var(--primari);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
+  animation: entrar 0.6s ease both;
+}
+
+.etiqueta {
+  display: inline-block;
+  background: var(--primari);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.article h1 { font-size: 2.2rem; line-height: 1.2; margin-bottom: 8px; }
+.autor { color: var(--suau); font-size: 0.9rem; margin-bottom: 20px; }
+.imatge-principal { width: 100%; max-height: 360px; object-fit: cover; border-radius: 12px; margin-bottom: 24px; }
+.contingut h2 { margin: 24px 0 10px; color: var(--primari); }
+.contingut p { margin-bottom: 16px; }
+.tornar { display: inline-block; margin-top: 24px; color: var(--primari); font-weight: 700; text-decoration: none; }
+.peu { text-align: center; padding: 24px; color: #fff; font-size: 0.9rem; }
+
+@keyframes entrar { from { opacity: 0; translate: 0 24px; } to { opacity: 1; translate: 0 0; } }
